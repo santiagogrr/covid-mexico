@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    margin: 10px 0;
+    flex-direction: row;
+
+}
+
+.title{
+    font-family: Roboto;
+    font-size: 70px;
+    font-weight: bold;
+    color: white
+}
+
+.icon {
+    color: rgb(131, 79, 182);
+}
+
+@media (max-width: 770px) {
+    .title {
+        font-family: Roboto;
+        font-size: 50px;
+        font-weight: bold;
+        color: white
+    }
+}

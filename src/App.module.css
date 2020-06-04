@@ -1,0 +1,28 @@
+body {  
+    background-color: rgb(243, 243, 243);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141E30;
+}
+
+.text{
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.image {
+    width: 125px;
+    padding-left: 30px;
+}
