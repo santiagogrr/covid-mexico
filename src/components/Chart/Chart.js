@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { fetchDailyData, fetchMexico, fetchYesterdayMexico } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
+import cx from 'classnames';
 
 import styles from './Chart.module.css';
 
@@ -45,31 +46,25 @@ class Chart extends Component {
 						display: true, 
 						position: 'top', 
 						labels: {
-						fontSize: 18
+						fontSize: 16
 					}
 				},
-					title: { display: true, text: `Daily stats on the past 30 days`, fontSize: 20},
+					title: { display: true, text: `Daily stats on the past 30 days`, fontSize: 18},
 					tooltips: {
-						titleFontSize: 18,
-						bodyFontSize: 18,
+						titleFontSize: 14,
+						bodyFontSize: 14,
 					},
-					layout: {
-            padding: {
-                left: 70,
-                right: 70,
-                top: 50,
-                bottom: 50
-            }
-        },
+					maintainAspectRatio: 	false,
+					responsive:true,
 					scales: {
 						yAxes: [{
 							ticks: {
-                fontSize: 16
+                fontSize: 14
             }
 						 }],
 						xAxes: [{
 							ticks: {
-                fontSize: 16
+                fontSize: 14
             }
 						 }],
 						},
@@ -165,7 +160,7 @@ class Chart extends Component {
 			  legend: { 
 					display: true, 						
 					labels: {
-						fontSize: 18
+						fontSize: 16
 					} 
 				},
 				title: { display: true, text: `Current updates in cases and deaths`, fontSize: 20},
@@ -174,39 +169,31 @@ class Chart extends Component {
 							stacked: true,
 							ticks: {
 								beginAtZero: true,
-								fontSize: 16
+								fontSize: 14
 							}
 					}],
 					yAxes: [{
 							stacked: true,
 							ticks: {
 								beginAtZero: true,
-								fontSize: 16
+								fontSize: 14
 							}
 					}]
 			},
 			tooltips: {
-				titleFontSize: 18,
-				bodyFontSize: 18,
+				titleFontSize: 14,
+				bodyFontSize: 14,
 			},
-			layout: {
-				padding: {
-						left: 70,
-						right: 70,
-						top: 50,
-						bottom: 50
-				}
-		}
+			maintainAspectRatio: 	false,
+			responsive:true,
 			}}
 		  
 		  />
 		) : null
 	  )
   
-	
-
     return (
-			<div className={styles.container}>
+			<div className={cx(styles.container,styles.chart)}>
 					{this.props.toggled1 ? lineChart: null}
 					{this.props.toggled2 ? barChart: null}
 			</div>

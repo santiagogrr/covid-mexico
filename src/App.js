@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Cards, LottieView, Title } from './components/';
 import coronaImage from './assets/flag_mexico.png'
-import { fetchGlobal, fetchMexico, fetchYesterdayMexico} from './api';
+import { fetchMexico, fetchYesterdayMexico} from './api';
 import { Typography } from '@material-ui/core';
 
 

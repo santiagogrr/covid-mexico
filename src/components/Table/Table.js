@@ -7,7 +7,7 @@ const TableComponent = () => {
 
 	const useStyles = makeStyles({
 		table: {
-			minWidth: 650,
+			minWidth: 450,
 		},
 	});
 	
@@ -18,7 +18,7 @@ const TableComponent = () => {
 			fontSize: 20
     },
 		body: {
-			fontSize: 18,
+			fontSize: 16,
 		},
 	}))(TableCell);
 	
@@ -48,7 +48,7 @@ const TableComponent = () => {
   return (
     <div>
 			<TableContainer component={Paper} className={classes.root}>
-      <Table className={classes.table}>
+      <Table >
         <TableHead>
           <TableRow>
             <StyledTableCell>Department</StyledTableCell>
