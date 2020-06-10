@@ -79,7 +79,7 @@ const Cards = ({ dataMex, dataYesterdayMex } ) => {
     <div>
       <div className={styles.container}>
         
-        <Typography style={{marginBottom: "1%"}} variant="h4" color="textPrimary" align="center" gutterBottom>Today <span style={{fontSize:15}}>({new Date(dataMex.updated).toLocaleDateString("en-GB")})</span></Typography>
+        <Typography className={styles.typography} variant="h4" color="textPrimary" align="center" gutterBottom>Today <span style={{fontSize:15}}>({new Date(dataMex.updated).toLocaleDateString("en-GB")})</span></Typography>
         <Grid container spacing ={3} justify="center">
           
         <HtmlTooltipGray title={<Typography style={{fontWeight: 300}} variant="body1" color="textPrimary">There is a {parseFloat(percentDiffCases).toFixed(2)+"%"} {isPositiveNegativeCases} in confirmed cases in comparison to yesterday</Typography>} placement="top-end">
@@ -120,7 +120,7 @@ const Cards = ({ dataMex, dataYesterdayMex } ) => {
       </div>
 
       <div className={styles.container}>
-        <Typography style={{marginBottom: "1%"}} variant="h4" color="textPrimary" align="center" gutterBottom>Yesterday <span style={{fontSize:15}}>({new Date(yesterday).toLocaleDateString("en-GB")})</span></Typography>
+        <Typography className={styles.typography} variant="h4" color="textPrimary" align="center" gutterBottom>Yesterday <span style={{fontSize:15}}>({new Date(yesterday).toLocaleDateString("en-GB")})</span></Typography>
         <Grid container spacing ={3} justify="center">
           <Grid item component={Card} xs={11} md={2} className = {cx(styles.card)}>
             
@@ -168,7 +168,7 @@ const Cards = ({ dataMex, dataYesterdayMex } ) => {
 
       <div className={styles.container}>
 
-        <Typography style={{marginBottom: "1%"}} variant="h4" color="textPrimary" align="center" gutterBottom>All time</Typography>
+        <Typography className={styles.typography} variant="h4" color="textPrimary" align="center" gutterBottom>All time</Typography>
         <Grid container spacing = {3} justify="center">
             <Grid item component={Card} xs={11} md={3} className = {cx(styles.card)}>
               

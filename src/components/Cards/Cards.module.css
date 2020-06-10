@@ -13,6 +13,10 @@
     margin-bottom: 20px;
 }
 
+.typography {
+    margin-bottom: 2% !important;
+}
+
 .image {
     width: 85px;
     padding-left: 30px; 
@@ -47,8 +51,8 @@
         margin: 2% 0 !important;
     }
 
-    .card2 {
-        margin: 2% 0 !important;
+    .typography {
+        margin-bottom: 5% !important;
     }
 
     .image {

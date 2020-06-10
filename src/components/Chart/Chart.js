@@ -39,7 +39,7 @@ class Chart extends Component {
 		// } ;
 		
 		const lineChart =  (
-      dailyData.length != 0 ? 
+      dailyData.length !== 0 ? 
       (<Line
 				options={{
 					legend: { 
